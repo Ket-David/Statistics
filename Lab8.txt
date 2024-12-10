@@ -1,0 +1,44 @@
+LAB 8 QUESTIONS:
+-----------------------------------
+
+The volumes, in mililitres, of soft drink of a random sample of 10 bottles from a large batch were as follows:
+
+136, 140, 140, 147, 133, 138, 143, 157, 142, 135.
+
+Stating clearly your null and alternative hypotheses, test the claim that the mean value of soft drink in bottles in the batch is 150 ml. Use a 96% confidence level. Assume that, for the batch, volumes are normally distributed with a standard deviation of 7 ml.
+
+1.) 𝐻0: 𝑚= 150
+    𝐻1: 𝑚≠ 150
+
+2.) The value of the test statistic:
+    -4.0206101679284
+
+3.) The boundaries of the region of acceptance (critical values):
+    [-2.0537, 2.0537]
+
+4.) Decision ( 0, if we accept   ~   1, if we reject): 1
+
+
+Experiment with a new variety of tomato are being conducted at an agricultural research station. The crop is grown under carefully controlled conditions on eight experimental plots and the yields, in kg per plot, are found to be as follows:
+
+63.5, 61.3, 59.4, 64.1, 58.9, 58.6, 60.7, 60.5.
+
+It is known that an established variety of tomato would have a mean yield of 60 kg per plot on the experimental plot. Test, at the 97% level of confidence, whether the new variety has a different mean yield, stating clearly your null and alternative hypotheses. State also the assumptions undelying your analysis.
+
+1.) 𝐻0: 𝑚 = 60
+    𝐻1: 𝑚 ≠ 60
+
+2.) The value of the test statistic: 1.2181218043488
+
+3.) The boundaries of the region of acceptance (critical values):
+[-2.7146, 2.7146]
+
+4.) Decision ( 0, if we accept   ~   1, if we reject): 0
+
+Sample Solution
+x = [89.1, 91.8, 92.7, 92.9, 92.4, 88.9, 94.1, 88.8];
+[h p ci stats] = ttest(x, 90, "Alpha", 0.1)
+tinv([0.1/2, 1 - 0.1/2], 7)
+
+
+
