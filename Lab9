@@ -24,10 +24,13 @@ k1= 167, k2= 168, k3= 166, k4= 138, k5= 146, k6= 115
 
 
 Sample Solution:
-ob = [147, 172, 150, 134, 148, 149];
-expected = sum(ob) * 1/6;
-[h,~,x2] = chi2gof(ob, "Expected", expected, "Frequency", ob)
+ob = [158, 141, 171, 166, 133, 131];
+die = 1:6;
+e = 900/6;
+expected = repmat(e,1,6);
+[h,p,x2] = chi2gof(die, expected, ob)
 alpha = 0.06; chi2inv(1-alpha, 5)
+chi2inv(0.94,5)
 
 Sample Solution
 
