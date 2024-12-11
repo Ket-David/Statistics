@@ -1,0 +1,13 @@
+Lab 7 - Question 4
+----------------------------------
+
+Solution:
+
+tempc = (JanTemp - 32) / 1.8;
+uq = quantile(Lat, 0.75);
+data = tempc(Lat < uq);
+m = mean(data)
+sd = std(data)
+f0 = mean(data < 0);
+m = max(data);
+City(tempc == m)
