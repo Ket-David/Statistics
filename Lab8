@@ -18,6 +18,10 @@ Stating clearly your null and alternative hypotheses, test the claim that the me
 
 4.) Decision ( 0, if we accept   ~   1, if we reject): 1
 
+Sample Solution:
+x = [136, 140, 140, 147, 133, 138, 143, 157, 142, 135];
+[h p ci zval] = ztest(x, 150, "Sigma", 7, "Alpha", 0.04)
+norminv([1-alpha/2]
 
 Experiment with a new variety of tomato are being conducted at an agricultural research station. The crop is grown under carefully controlled conditions on eight experimental plots and the yields, in kg per plot, are found to be as follows:
 
