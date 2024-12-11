@@ -1,0 +1,37 @@
+Lab 8 
+------------------------------------------------------
+At a 95% confidence level, check if a die is fair or not. Let Ai
+ be the event, that we rolled i
+ with the die. 
+
+Now P(Ai)=1/6, i=1,...,6.
+
+We rolled the die 900 times and got the following result:
+
+k1= 167, k2= 168, k3= 166, k4= 138, k5= 146, k6= 115
+(ki is the number of cases when the outcome was Ai).
+
+1.) H0: The die is fair.
+    H1: It is not fair.
+
+2.) The value of the test statistic:
+
+
+3.) The critical value:
+
+
+4.) Decision (0, if we accept   ~    1, if we reject)
+
+
+Sample Solution:
+ob = [147, 172, 150, 134, 148, 149];
+expected = sum(ob) * 1/6;
+[h,~,x2] = chi2gof(ob, "Expected", expected, "Frequency", ob)
+alpha = 0.06; chi2inv(1-alpha, 5)
+
+Sample Solution
+
+cont = [30 28 3; 5 74 24; 11 20 5];
+[~, ~, x2] = chi2cont(cont, .05)
+alpha = .05; 
+chi2inv(1-alpha, 4)
