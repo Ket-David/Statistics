@@ -29,7 +29,8 @@ die = 1:6;
 e = 900/6;
 expected = repmat(e,1,6);
 [h,p,x2] = chi2gof(die, expected, ob)
-alpha = 0.06; chi2inv(1-alpha, 5)
+alpha = 0.06; 
+chi2inv(1-alpha, 5) % other way to find the chi2inv
 chi2inv(0.94,5)
 
 2nd Exercise
