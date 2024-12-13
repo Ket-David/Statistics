@@ -8,6 +8,6 @@ uq = quantile(Lat, 0.75);
 data = tempc(Lat < uq);
 m = mean(data)
 sd = std(data)
-f0 = mean(data < 0);
+f0 = mean(data < 0); using logical condition True/False
 m = max(data);
 City(tempc == m)
