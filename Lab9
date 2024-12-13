@@ -1,4 +1,4 @@
-Lab 8 
+Lab 9 
 ------------------------------------------------------
 At a 95% confidence level, check if a die is fair or not. Let Ai
  be the event, that we rolled i
@@ -31,6 +31,8 @@ expected = repmat(e,1,6);
 [h,p,x2] = chi2gof(die, expected, ob)
 alpha = 0.06; chi2inv(1-alpha, 5)
 chi2inv(0.94,5)
+
+2nd Exercise
 
 Sample Solution
 
